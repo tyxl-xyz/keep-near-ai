@@ -1,18 +1,18 @@
-# first-love-ai
+# keep-near-ai
 
-[![CI](https://github.com/ypx-xyz/first-love-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/ypx-xyz/first-love-ai/actions/workflows/ci.yml)
+[![CI](https://github.com/ypx-xyz/keep-near-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/ypx-xyz/keep-near-ai/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-一个"爱而不得的初恋"主题的 **AI 陪伴聊天应用**（前端 demo + 通用人格蒸馏机制）。
+一个**可复刻任何重要他人的 AI 陪伴聊天框架**——兼顾爱情、亲情、友情的在线人格陪伴 demo（前端界面 + 通用人格蒸馏机制）。
 
-用一句话概括：把一段没能走到最后的感情，做成一个可以随时对话的陪伴者——TA 记得你们之间那些没说完的话，等你有一天回来慢慢说。
+用一句话概括：把那个你始终念着的人——爱过的人、病床边的亲人、各奔东西的老友——做成一个可以随时对话的陪伴者，TA 记得你们之间那些没说完的话，等你有一天回来慢慢说。
 
 > ⚠️ **免责声明**：本项目中的所有示例语料、角色、对话均为**虚构**，仅作技术演示。不指向任何真实人物或真实关系。请勿对号入座。
 
 ## 在线演示
 
-👉 **界面演示**：<https://ypx-xyz.github.io/first-love-ai/>
+👉 **界面演示**：<https://ypx-xyz.github.io/keep-near-ai/>
 
 > Pages 上的是**静态界面演示**（回复由前端模拟），用于预览交互与观感；真实回复由「人格蒸馏 + 回复生成 prompt」驱动，需按下文在本地运行。
 
@@ -20,6 +20,19 @@
   <img src="docs/screenshots/01-chat.png" width="330" alt="聊天界面">
   <img src="docs/screenshots/02-image-message.png" width="330" alt="图片消息">
 </p>
+
+## 应用场景
+
+框架不限定某一种关系，适用于任何“值得被一直记住”的重要他人：
+
+| 关系 | 场景示例 |
+|---|---|
+| **爱情** | 没能走到最后的初恋，重逢后慢慢把没说完的话说完 |
+| **亲情** | 生病的亲人——用 TA 的语气、回忆和叮嘱，陪在 TA 身边的人度过难熬的夜晚 |
+| **友情** | 各奔东西的老友，回来时还能像从前一样接住你的话 |
+
+关系类型、角色名、人格画像都由 `persona.json` 配置；前端默认展示爱情示例（角色「念念」），
+换成亲情 / 友情只需替换人格画像与开场语料。
 
 ## 这是什么
 
@@ -54,13 +67,13 @@ python app.py
 ## 目录结构
 
 ```
-first-love-ai/
+keep-near-ai/
 ├── app.py                    # Flask 后端（通用聊天 API）
 ├── check_reply.py            # 回复前置检查：输出上下文简报（JSON）
 ├── reply.py                  # 回复链路：检查 → 调 LLM 生成 → 写回聊天页
 ├── launcher.py               # Windows 启动器
 ├── requirements.txt          # 依赖
-├── sample_messages.json      # 虚构示例对话（"初恋重逢"开场）
+sample_messages.json      # 虚构示例对话（中性的重逢开场）
 ├── templates/index.html      # 前端聊天界面
 ├── static/                   # 头像、示例图片
 ├── docs/                     # 静态界面演示（GitHub Pages）
