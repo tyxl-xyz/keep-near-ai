@@ -1,6 +1,6 @@
 # keep-near-ai
 
-[![CI](https://github.com/ypx-xyz/keep-near-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/ypx-xyz/keep-near-ai/actions/workflows/ci.yml)
+[![CI](https://github.com/tyxl-xyz/keep-near-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/tyxl-xyz/keep-near-ai/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -12,7 +12,7 @@
 
 ## 在线演示
 
-👉 **界面演示**：<https://ypx-xyz.github.io/keep-near-ai/>
+👉 **界面演示**：<https://tyxl-xyz.github.io/keep-near-ai/>
 
 > Pages 上的是**静态界面演示**（回复由前端模拟），用于预览交互与观感；真实回复由「人格蒸馏 + 回复生成 prompt」驱动，需按下文在本地运行。
 
